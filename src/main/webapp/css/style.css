@@ -1,0 +1,720 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+html,body{font-family: 'Open Sans', sans-serif;font-size:14px;overflow-x:hidden;}
+a:focus{outline:inherit;outline-offset:inherit;}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus{outline:inherit;outline-offset:inherit;}
+p{line-height:22px;}
+.text-1{font-weight:100;font-size:48px;margin: 0;line-height:60px;}
+.text-6{font-weight:100;font-size:24px;margin-top:14px;}
+.sidebar{top:35%;right:20px;z-index:999;padding: 20px 0px;position:fixed;display:none;}
+.sidebar > nav{position:relative;}
+.sidebar > nav > ul{list-style-type:none;margin:0;padding:0;}
+.sidebar > nav > ul > li{position:relative;}
+#nav-anchor{background-color: #BDBDBD;
+width: 1px;
+position: absolute;
+height: 100%;
+left: 8px;
+top: 0;z-index: -1;}
+.nav-anchor{display:none;}
+.sidebar > nav > ul > li > a{display: block;width:16px;height:16px;border-radius:16px;background-color:#bdbdbd;border:1px solid #bdbdbd;margin:18px 0 0;z-index: 1;}
+.tooltip-inner {font-size:14px;}
+.sidebar > nav > ul > li:nth-child(1) > a{margin-top:inherit;}
+.sidebar > nav > ul > li:nth-child(2) > .tooltip.left{left:-170px !important;}
+.sidebar > nav > ul > li:nth-child(4) > .tooltip.left{left:-142px !important;}
+.sidebar > nav > ul > li:nth-child(5) > .tooltip.left{left:-190px !important;}
+.sidebar > nav > ul > li:nth-child(6) > .tooltip.left{left:-132px !important;}
+.sidebar > nav > ul > li:nth-child(7) > .tooltip.left{left:-185px !important;}
+
+.sidebar2 > nav > ul{list-style-type:none;margin:0;padding:0;}
+.sidebar2 > nav > ul > li{display:inline-block}
+.sidebar2 > nav > ul > li > a{padding:10px 55px 10px 30px;font-size:15px;color:#0c8cc4;display:block;background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b137589db-b4f3-499b-b550-e8cbe1e237a7%7d_img-right.png) no-repeat center right;}
+.sidebar2-w > nav > ul > li > a{padding:10px 12px 10px 30px;font-size:15px;color:#fff;display:block;background: url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b05222aa8-6998-4c7c-9939-d31aa9bd9abd%7d_divider.png) no-repeat center right;}
+.sidebar2 > nav > ul > li:last-child > a{background:#fff!important;color:#000;}
+.sidebar2 > nav > ul > li:first-child > a{padding-left:0;}
+.sidebar2 > nav > ul > li > a:hover,.sidebar2 > nav > ul > li > a:focus{color:#000;text-decoration:inherit;}
+
+.sidebar > nav > ul > li > .nav-active{background-color:#0C8CC4 !important;}
+.sidebar2 > nav > ul > li > .nav-active{color:#000;}
+.header{position:fixed;z-index:10;width:100%;background:#FFF;
+-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;border-bottom: 1px solid #e1e5e7;
+}
+.header-fix-2{position:fixed;z-index:1;width:100%;background: #ddf4ee;box-shadow:0 0 2px #292929;}
+.header-fix .navbar-top{/*margin-top:-65px;*/}
+.header-fix{-webkit-transform: translateY(-65px);
+    transform: translateY(-65px);}
+.navbar{margin-bottom:0;min-height:inherit;
+-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.navbar-top{border-bottom:1px solid #e1e5e7;padding-top:10px;padding-bottom:10px;}
+.navbar-colp{padding-top:7px;padding-bottom:7px;}
+.logo{font-size:18px;color:#757575;font-weight:400;margin-top: 9px;}
+.logo img{width:50px;vertical-align:bottom;}
+.logo a,.logo a:hover,.logo a:focus{color:#000;text-decoration:none;}
+.navbar-brand{padding:9px 30px;line-height:inherit;height:inherit;margin-left: 15px;font-size:16px;margin-top: 1px;}
+.navbar-toggle{margin-top: 3px;margin-bottom:0;}
+.navbar-toggle .icon-bar{background:#0c8cc4;width: 26px;height:3px;}
+.nav > li > a:hover, .nav > li > a:focus{background-color:inherit;}
+.navbar-nav > li{margin-right:28px;}
+.navbar-right > li{margin-right:10px;}
+.navbar-nav > li > a{font-size: 16px;padding:10px 10px;}
+.nav-color > li > a{color:#9e9e9e;font-size:15px;border-bottom:2px solid #FFF;}
+.nav-color > li > a:hover, .nav-color > li > a:focus{color:#212121;border-bottom: 2px solid #212121;}
+.active{color:#212121 !important;border-bottom: 2px solid #212121 !important;font-weight: 600;}
+.active-4{color:#212121 !important;}
+.nav-col-2{margin-left:-26px;}
+.nav-col-2 > li > a,.nav-col-2 > li > a:focus{color:#0c8cc4;border-bottom:2px solid #fff;}
+.nav-col-2 > li > a:hover{color:#212121;border-bottom:2px solid #212121;}
+.navbar-2{display:none !important;}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{background-color:inherit;border-color:#fff;color:#212121;}
+.dropdown a:hover{border-bottom:1px solid #fff !important;}
+.dropdown a:hover ul{display:block;}
+/*.dropdown > a:hover .dropdown-menu{display:block;}*/
+.dropdown-menu{padding:0;border:inherit;border-radius:inherit;}
+.dropdown-menu > li > a,.dropdown-menu > li > a:focus{padding: 10px 15px;color:#0c8cc4;border:1px solid #cccccc;border-bottom:inherit;}
+.dropdown-menu > li:last-child > a,.dropdown-menu > li:last-child > a:focus{border-bottom:1px solid #0c8cc4;}
+.dropdown-menu > li > a:hover{border-bottom:inherit !important;background-color:#1cb890;border:1px solid #1cb890;color:#FFF;border-bottom:inherit;}
+
+
+.redColor {
+    background: #a5281a none repeat scroll 0 0;
+    border-radius: 0 0 3px 3px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: normal;
+    left: 5px;
+    margin: 0 auto;
+    padding: 0 3px;
+    position: relative;
+    text-shadow: 0 1px 0 #821105;
+    top: -4px;
+}
+.redColor::before {
+    border-bottom: 8px solid #a5281a;
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -8px;
+    width: 0;
+}
+label {
+    font-weight: normal;
+    position: relative;
+}
+.required label::before {
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    border-right: 8px solid #849f06;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 49px;
+    top: 4px;
+    width: 0;
+}
+.required label::after {
+    background: #849f06 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #ffffff;
+    content: "Required";
+    font-family: arial;
+    font-size: 10px;
+    left: 1px;
+    line-height: 20px;
+    margin-left: 5px;
+    padding: 1px 6px;
+    position: relative;
+    text-shadow: 1px 1px #637707;
+    top: -2px;
+}
+#alertCheck {
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px 0;
+	border: 1px solid #cccccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+
+
+.heade-2{background: #0c8cc4;
+padding-top: 5px;
+padding-bottom:5px;
+position: fixed;
+z-index: 1;
+width: 100%;
+-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.head-2-col-1{font-size:22px;font-weight:700;border-bottom:1px solid #0c8cc4;padding-bottom:10px;}
+.mobile-tab{width:100%;font-size: 20px;display:none;}
+
+.btn-primary{background:#0c8cc4;border:inherit;}
+.btn-5{padding: 9px 30px;font-size:24px;font-weight:700;}
+.btn-primary:hover, .btn-primary.focus{background:#0a709d;}
+.body-top{padding-top:124px;}
+.banner-slider{position:relative;height:470px;}
+.banner-slider > .banner-img{
+	height:470px;
+	}
+.banner-slider > .banner-img:first-child{background:url('../images/slides/slide_image4.jpg') no-repeat scroll center center / cover;}
+.banner-slider > .banner-img:nth-child(2){background:url('../images/slides/slide_image1.png') no-repeat scroll center center / cover;}
+.banner-slider > .banner-img:nth-child(3){background:url('../images/slides/slide_image3.jpg') no-repeat scroll center center / cover;}
+.banner-slider > .banner-img:nth-child(4){background:url('../images/slides/slide_image2.png') no-repeat scroll center center / cover;}
+.banner-slider > .banner-img:nth-child(5){background:url('../images/slides/slide_image4.jpg') no-repeat scroll center center / cover;}
+
+
+.banner-text{position:absolute;bottom: 12%;color:#FFF;left:0;right:0;margin:auto;}
+.play-btn {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.banner-img video {
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    height: auto;
+    width: auto;
+    position: relative;
+    bottom: 131px;
+    display: block;
+    margin-bottom: 15px;
+}
+.banner-slider > .banner-img:first-child > .banner-text > h1{max-width:1000px;}
+.banner-slider > .banner-img:nth-child(2) > .banner-text > h1{max-width:1000px;}
+.banner-slider > .banner-img:nth-child(5) > .banner-text > h1{max-width:1010px;}
+/*.banner-text{color: #FFF;
+max-width: 1170px;
+margin: auto;
+padding-left: 15px;
+padding-right: 15px;
+margin-top: 17%;}*/
+.banner-slider > .banner-img:first-child > .banner-text > h4{}
+.banner-slider > .banner-img:nth-child(2) > .banner-text > h4{max-width:791px;}
+.banner-slider > .banner-img:nth-child(3) > .banner-text > h4{max-width:791px;}
+.banner-slider > .banner-img:nth-child(4) > .banner-text > h4{}
+.banner-slider > .banner-img:nth-child(5) > .banner-text > h4{}
+
+.banner-text > h1{line-height:60px;font-size:48px;letter-spacing:-2px;font-weight: 700;}
+.banner-text > h4{margin-top:10px;font-size: 22px;}
+.btn-1, .btn-1:focus{border: 1px solid #FFF;
+color: #FFF;
+margin-top: 20px;
+border-radius: 2px;
+padding: 10px 34px;
+font-weight: 700;
+font-size: 16px;}
+.btn-1-col, .btn-1-col:focus{
+color: #0c8cc4;background:#FFF;
+margin-top: 20px;
+border-radius: 2px;
+padding: 10px 34px;
+font-weight: 700;
+font-size: 16px;}
+.btn-1:hover{color:#0c8cc4;background:#FFF;} 
+.btn-1-col:hover{color:#fff;background:none;border: 1px solid #fff;}
+
+.section{padding-top: 70px;
+    padding-bottom: 70px;}
+.section-2{padding-top:40px;}
+#data-scientists,#business-experts{padding-top:46px;}
+.section-3{padding-top:140px;padding-bottom:130px;}
+.section-4{padding-top:57px;padding-bottom:70px;}
+.section-5{padding-top:70px;padding-bottom:70px;}
+.section-6{padding-top: 100px;
+    padding-bottom: 100px;}
+.row-1{color:#000;}
+.row-1-col{color:#FFF;margin-top:30px;height:333px;}
+.row-1-col-nn{height:100%;background-color:#eeeeee;cursor: pointer;}
+.row-1-col-nn img{width:100%;}
+.row-1-col-nn-img{overflow: hidden;}
+.parentimage { 
+	width: 100%;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+} 
+.row-1-col:hover .parentimage,.row-10-block:hover .parentimage,.row-10-block:hover .parentimage {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+} 
+.row-1-col-nn-2{padding:30px;font-weight:600;font-size:16px;line-height:23px;color:#000;}
+
+.anchor{display:none;}
+.row-2{background: url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b1c4d3cc4-1209-453c-aa89-4279e0a9cfd6%7d_bg.jpg);}
+.cont-pd{padding-left:40px;padding-right:40px;}
+.row-2-col{font-weight:400;font-size:20px;}
+.row-2-col span{font-weight:600;font-size:18px !important;}
+
+.row-3{background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b54ad68dc-2b5c-4507-8868-86eb6d718926%7d_minimizing-hassles.jpg) no-repeat fixed center center / cover;color:#FFF;}
+.row-3-col{max-width:705px;margin-top:140px;font-size: 18px;}
+
+/*.row-4-wrap{overflow: hidden;overflow-x: hidden;}
+.row-4-wrap-n{width:1170px;height:541px; overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;}
+	}*/
+.container-2{max-width:1170px;margin:auto;padding-left:15px;padding-right:15px;}
+.row-4-col{float:left;width:33%;padding:15px;}
+.row-4-col-1{margin-top:100px;}
+.row-4-col-2{margin-top:50px;}
+.row-4-thumb-1{background: #0c8cc4 url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7bf0f0f003-534c-4d71-8140-d8368c6f66c2%7d_flexible-data-management.png") no-repeat scroll top left;}
+.row-4-thumb-2{background: #0c8cc4 url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b87bccdef-17a3-4d0d-97fb-2c40142621bb%7d_insights-development-and-analytics.png") no-repeat scroll top left;}
+.row-4-thumb-3{background: #0c8cc4 url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b4cf18d27-61d7-4aaf-8132-32dac625c679%7d_insights-as-a-service.png") no-repeat scroll top left;}
+.row-4-thumb{
+height: 150px;
+padding: 22px;
+color: #ffffff;
+font-size: 25px;
+font-weight: 700;position:relative;
+	}
+.row-4-thumb-nav{width:19px;height:13px;position:absolute;bottom:10px;right:10px;background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b255e3bd3-f4e9-487e-b85b-f0ec8fd26e96%7d_arrow-down-up.png") no-repeat scroll 0% 3px;}
+.row-4-thumb-nav-top{background-position:0% -10px;}
+.row-4-thumb:hover{background-color:#1cb890;}
+.row-4-thumb-bg{background-color:#1cb890;}
+.row-4-thumb-en{padding: 22px;border:1px solid #1cb890;border-top:inherit;display:none;}
+.row-4-thumb-en ul{margin-top:10px;}
+
+.row-4-col-nn-2{padding-left: 15%;}
+.row-4-block{padding-top: 20px; }
+
+.row-4-block-a{border-top:1px solid #e1e5e7;}
+
+.row-4-block-aa{padding:10px 30px 10px 0px;color:#0c8cc4;display: block;font-size: 16px;font-weight:600;}
+
+.row-4-block-aa:hover,.row-4-block-aa:focus{text-decoration:none;color:##0c5c80;}
+
+
+.row-5{background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b1c4d3cc4-1209-453c-aa89-4279e0a9cfd6%7d_bg.jpg);}
+.col-height{height:30px;}
+.slide-2{text-align:center;}
+.slide-2-sec{text-align: center;
+cursor: pointer;
+display: inline-block;
+vertical-align: top;
+width: 33%;
+padding-left: 15px;
+padding-right: 15px;}
+.slide-2-sec-n img{border:8px solid #FFF;border-radius:200px;margin:auto}
+.slide-2-sec-n:hover > img{border:8px solid #1cb890;}
+.slide-2-sec-n p{margin:auto;text-align:center;margin-top:10px;width:168px;height: 58px;font-size:22px;line-height: 28px;}
+.slide-2-sec-n:hover > p{color:#1cb890;}
+.slide-2-sec-n-col > img{border:8px solid #1cb890;}
+.slide-2-sec-n-col > p{color:#1cb890;}
+.slide-2-sec-nn{margin-top:10px;display:none;font-size: 16px;}
+.btn-2{border:1px solid #0c8cc4;border-radius:0;color:#000;margin-top:20px;border-radius:2px;padding: 10px 34px;font-size: 16px;}
+
+.row-6{background:#0c8cc4;color:#FFF;margin-top: 20px;}
+.row-6-wrap{margin-top:0;}
+.row-6-wrap-2{margin-top:60px;}
+
+.btn-2:hover, .btn-2:focus{color:#fff;background:#0c8cc4;} 
+.row-6-col{display:inline-block;vertical-align:top;width:44%;margin-top:30px;font-size: 18px;}
+.row-6-col-2{margin-left:4%;}
+.modal{top:10%;}
+.modal-header{border-bottom:none;}
+.modal-body{padding: 0 15px;}
+.modal-body .close{margin-top: -1px;
+margin-right: -47px;
+background: rgb(21, 40, 64) none repeat scroll 0% 0%;
+padding:0px 7px;
+color: #41abaf;font-size: 30px;}
+.close{opacity:1;text-shadow:inherit;font-weight:normal;line-height: 1.1;float:inherit;position:absolute;z-index:999;right:15px;}
+.close:hover, .close:focus{opacity: 0.9;}
+.modal-content{border-radius:0;}
+
+.modal-row-1-col-1{background:#d2f1f1;padding-left: 4%;
+padding:2% 6% 10% 4%;}
+.modal-row-1-col-2{padding:2% 6% 3% 4%;}
+.modal-row-1-col-1 p:last-child{margin-top:15px;}
+.btn-3{vertical-align:bottom;padding: 9px 30px;font-size:16px;}
+.form-horizontal{margin-top:20px;}
+.modal-row-2{padding:15px;}
+.modal-row-2{padding:20px;}
+.modal-row-2 > .text-mar{margin-top:10px;}
+
+.row-7{background: transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b7a09d9dc-4e4c-4e87-8b01-af8be6c1be58%7d_faqs-bg.jpg") no-repeat scroll center center / cover;}
+.row-7-wrap{position:relative;height:274px;}
+.row-8{padding-bottom:90px;}
+.row-8-col-1{margin-top: 30px;margin-bottom:50px;}
+.row-8-col-1 a{float: left;
+padding: 10px 30px;
+color: #007CC3;
+border:1px solid #007CC3;border-right:inherit;}
+.row-8-col-1 a:last-child{border-right: 1px solid #007CC3;}
+.row-8-col-1 a:hover,.row-8-col-1 a:focus{text-decoration:none;}
+.active-2{color:#fff !important;border:1px solid #1cb890 !important;background-color:#1cb890;font-weight:700;}
+.text-down{position:absolute;bottom:7%;color:#FFF;font-weight: 700;}
+#accordion{border-top:1px solid #c1c1c1;}
+.panel-default{border-left:inherit;border-right:inherit;border-bottom:inherit;}
+.panel{box-shadow:inherit;}
+
+.panel-heading{font-weight:600;padding:25px 15% 25px 30px;cursor:pointer;}
+.panel-heading span{font-size:12px;display:block;margin-top:10px;}
+.panel-default > .panel-heading{
+	display: block;
+	background:#1cb890 url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b468efa07-cc8d-41e5-a006-1f1861cb9c2d%7d_up-arrow.png") no-repeat scroll 96% 21px;color:#FFF;
+	}
+.panel-group .panel + .panel{margin-top:0;}
+.panel-default > .collapsed{
+	display: block;
+	background:#F9F9F9 url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b9f384701-e449-4940-ae97-7eefcfbb085c%7d_down-arrow.png") no-repeat scroll 96% 21px;color:#000;
+	border-bottom:1px solid #c1c1c1;
+	}
+.panel-default > .collapsed:hover{background-color:#1cb890;color:#FFF;}
+.panel-default > .panel-heading:hover,.panel-default > .panel-heading:focus{text-decoration:inherit;}
+.panel-default > .panel-heading + .panel-collapse > .panel-body{padding-top:25px;padding-bottom:30px;}
+.panel-body > .row > div{padding-left:30px;padding-right:30px;}
+.row-banner-3{background: transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b6ecf7aee-c9cc-4907-871a-b56edaee1795%7d_iip-connect-with-us-bg.jpeg") no-repeat scroll center center / cover;}
+.text-1-m{margin-bottom:15px;}
+
+.text-1-m-top{margin-top:30px;}
+.text-1-m-top-2{margin-top:50px;}
+.text-sm{font-size:13px;}
+.col-row-9 span{font-size:13px;}
+.hd-ln{height:1px;border-bottom:1px dotted #000;margin:50px 0 30px;padding-left:15px;padding-right:15px;}
+.row-banner-4{background: transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b76f11bda-8515-4a6d-9e58-d456e210035a%7d_overview-bg.jpeg") no-repeat scroll center center / cover;}
+.row-11{background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b1c4d3cc4-1209-453c-aa89-4279e0a9cfd6%7d_bg.jpg);}
+.load_more{text-align:center;padding:30px 0 70px 0;}
+.col-pagination{text-align:center;padding:0 0 70px 0;}
+.text-2{font-size:18px;margin:5% 0;}
+.text-3{border-bottom:1px dotted #000;padding-bottom:10px;}
+.col-row-10 ul{margin-top:10px;line-height:22px;}
+.sharer-wrap{position:relative;}
+.share{margin-bottom: 25px;
+width: 33px;
+margin-left: auto;cursor:pointer;}
+.popover{position: absolute;
+    z-index: 999;
+    width: 125px;
+    right:44px;top: -9px;left:inherit !important;}
+.social-media a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 27px;
+	padding-top: 3px;
+    text-align: center;
+   background-size: 130px;
+	border: 1px solid #0c8cc4;
+}
+.social-media a:hover {
+   
+    background-color:#0a709d;
+	border: 1px solid #0a709d;
+	color:#FFFFFF;
+}
+.social-media a:first-child {
+    background-position: -34px -1px;
+}
+.social-media a:nth-child(2) {
+    background-position: -1px -1px;
+}
+.social-media a:nth-child(3) {
+    background-position: -68px -1px;
+}
+.social-media a:last-child {
+    background-position: -101px -1px;
+}
+.row-banner-5{background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b51cc9ada-9068-41d9-8627-c79dbcaaddf5%7d_users-banner-1.jpeg") no-repeat scroll center center / cover;}
+.row-banner-6{background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b32f1e94c-da5e-4a50-b481-d68fd642f72d%7d_users-banner-2.jpeg") no-repeat scroll center center / cover;}
+.row-banner-7{background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7bd0b93194-6112-424c-bb24-6a3580aff77d%7d_users-banner-3.jpeg") no-repeat scroll center center / cover;}
+.anchor:hover,.anchor:focus{text-decoration:none;}
+
+.row-banner-8{background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b93668c09-67c9-47d3-a1ce-b3e4243be697%7d_everybody-wins-as-atp.jpeg") no-repeat scroll center center / cover;}
+.banner-slider > .banner-img-2{height: 470px;}
+.banner-slider > .banner-img-2{background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b6ce76a60-84b0-4088-a64b-f370027fd477%7d_bg.jpg") no-repeat scroll center center / cover;}
+.banner-slider > .banner-img-2:nth-child(1){background: url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7bb38f9dc8-baa0-4f1e-855d-7cecd4fc4d88%7d_ODPi-bg1.jpg") no-repeat scroll center center / cover;}
+.banner-slider > .banner-img-2:nth-child(2){background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b13990442-d83b-4d97-982d-9abdb8e2bf6f%7d_infosys-information-platform.jpg") no-repeat scroll center center / cover;}
+.banner-slider > .banner-img-2:nth-child(3){background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b93668c09-67c9-47d3-a1ce-b3e4243be697%7d_everybody-wins-as-atp.jpeg") no-repeat scroll center center / cover;}
+.banner-slider > .banner-img-2:nth-child(4){background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7bf883ec20-5df0-4cfa-ad55-fbe358926d10%7d_20160506110331-banner.jpg") no-repeat scroll center center / cover;}
+.banner-slider > .banner-img-2:nth-child(4) > .banner-text > h1{max-width:900px;}
+.col-row-10 > img{margin-top:14px;}
+.text-1-col{color:#0c8cc4;line-height: 60px;display:block;}
+.text-1-col:hover,.text-1-col:focus{color:#076792;text-decoration:none;}
+.text-4{color:#757575;border-top:1px dotted #434a54;border-bottom:1px dotted #434a54;padding-top:5px;padding-bottom:5px;}
+.row-banner-9{background: transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b8539b807-3dbc-44b2-acc8-8c3b015179f9%7d_solutions-banner-bg.jpeg") no-repeat scroll center center / cover;}
+.row-banner-11{background: transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7ba363217f-f87e-43a9-9d46-c8a57c83fb5c%7d_use-case-banner.jpg") no-repeat scroll center center / cover;}
+.row-banner-10{background: transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b3e417c69-e83f-4800-9f01-b21fef458f66%7d_resources-page-bg.jpeg") no-repeat scroll center center / cover;}
+.row-bb-9{background-color:#ddf4ee;}
+.col-dropdown{max-width:262px;}
+
+.btn-4{padding:0;margin-top:10px;margin-bottom:10px;text-align:left;font-weight: 600;border:inherit;}
+.btn-4 div{border-radius:0;background:#FFF;border-color:1px solid #e7eaec;font-size:15px;height:inherit;}
+.dropdown-menu-2{width:100%;margin-top: -1px;}
+.option-set > li:first-child{display:none;}
+.row-10-block{background-color: #eeeeee;
+margin-bottom: 30px;}
+.isotope-item > .row-10-block{height: 400px;cursor:pointer;}
+.isotope-item > .row-10-block > .block-3 {
+    border-bottom: none;
+}
+.dropdown-backdrop{display:none;}
+.block-1{position:relative;overflow:hidden;}
+.block-1-label{position: absolute;
+bottom: 0;
+background: RGBA(0, 0, 0, 0.48);
+width: 100%;
+font-weight: 600;
+font-size: 18px;
+padding: 10px 30px;
+color: #fff;}
+.block-2{border-bottom:1px solid #FFF;}
+.block-3{padding: 30px;background-color: #eeeeee;
+    font-size: 15px;
+    border-bottom: 1px solid #FFF;}
+.block-2 a{color:#4B4B4B;display:block;padding:30px;font-size: 15px;}
+.block-2 a:hover{color:#000;background-color:#d3d7d9;}
+.block-2 a:hover,.block-2 a:focus{text-decoration:none;}
+.block-2-head{font-size:17px;font-weight:600;margin-bottom: 5px;}
+.row-9-nav{padding:13px 0;}
+.row-9-nav a{padding:5px 10px;
+text-align: center;
+display: inline-block;color:#000;}
+.row-9-nav a:hover,.row-9-nav a:focus{color:#000;text-decoration:inherit;font-weight: 600;}
+.active-5{font-weight: 600;border-bottom:2px solid #000;}
+.nav-5{padding: 15px 30px;text-align: right;
+margin-left: auto;color:#0c8cc4;font-size: 14px;}
+.nav-5 a{color:#0c8cc4;font-size: 14px;padding:5px;}
+.nav-5 a:hover,.nav-5 a:focus{color:#0d648a;text-decoration:inherit;background:none !important;}
+.text-1-m-2{margin-bottom:40px;}
+.text-5{font-size:22px;font-weight:600;}
+
+
+.isotope,.isotope .isotope-item{
+	-webkit-transition-duration:.8s;
+	-moz-transition-duration:.8s;
+	-ms-transition-duration:.8s;
+	-o-transition-duration:.8s;
+	transition-duration:.8s;
+}
+
+
+
+
+.footer-col-1{background:#0d0f10;}
+.ul{padding:0;}
+.ul li{list-style-type:none;color:#c3c3c3;line-height:25px;font-size: 15px;}
+.ul li:first-child{margin-bottom:5px;}
+.ul li a,.ul li a:hover,.ul li a:focus{color:#666666;font-size:14px;text-decoration:inherit;}
+.media{text-align:right;}
+.media a{width: 50px;
+height: 50px;
+display: inline-block;
+vertical-align: middle;}
+.media a:first-child{background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b232a6ac7-392d-40ea-870e-c73246b8585a%7d_social-media-icons.png") no-repeat scroll 0% 0%;}
+.media a:nth-child(2){background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b232a6ac7-392d-40ea-870e-c73246b8585a%7d_social-media-icons.png") no-repeat scroll -51px 0%;}
+.media a:nth-child(3){background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b232a6ac7-392d-40ea-870e-c73246b8585a%7d_social-media-icons.png") no-repeat scroll -102px 0%;}
+.media a:nth-child(4){background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b232a6ac7-392d-40ea-870e-c73246b8585a%7d_social-media-icons.png") no-repeat scroll -153px 0%;}.media a:nth-child(5){background:transparent url("http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b232a6ac7-392d-40ea-870e-c73246b8585a%7d_social-media-icons.png") no-repeat scroll -204px 0%;}
+.media a:first-child:hover{background-position:0% -51px;}
+.media a:nth-child(2):hover{background-position:-51px -51px;}
+.media a:nth-child(3):hover{background-position:-102px -51px;}
+.media a:nth-child(4):hover{background-position:-153px -51px;}
+.media a:nth-child(5):hover{background-position:-204px -51px;}
+.footer-col-2{background:#000000;color:#727272;padding-top:5px;padding-bottom:5px;text-align:right;}
+.go-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    color: #feb10a;
+    font-size: 15px;
+    z-index: 999;
+	display:none;
+	border: 2px solid #fff;
+border-radius: 40px;
+background-color:#34a2e3;
+}
+.go-to-top:hover{background-color:#1175b0;}
+.modal-body iframe {
+    width: 100%;
+    height: 394px !important;
+    margin-bottom: -6px;
+}
+@media screen and (max-width:1199px){
+	.sidebar{display:none !important;}
+	.sideview > nav > ul > li > a{padding: 10px 11px;color:#fff;}
+	.cont-pd{padding-left:15px;padding-right:15px;}
+	#myVideo {
+    display: none;
+}
+	}
+@media screen and (max-width:991px){
+	.navbar-nav > li{margin-right: 0px;}
+	.navbar-nav > li > a{padding: 10px 8px;}
+	.sideview > nav > ul > li{display:block;}
+	.sideview > nav > ul > li > a{text-align:center;padding-left:inherit !important;padding-right:inherit !important;background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b03fee140-a903-4b95-a81c-f91e974e39d4%7d_img-down.png) no-repeat center bottom;padding-bottom: 33px;}
+	.sideview > nav > ul > li > a{padding:10px 55px 10px 30px;font-size:15px;color:#fff;display:block;/*background: url(../images/divider2.png) no-repeat center bottom;*/ background:inherit !important;}
+	.mobile-tab{display:block;}
+	.sideview > nav{display:none;}
+	.sideview > nav > ul > li:last-child > a{}	
+	.slide-2-sec{width:30%;display:block;width:auto;padding:inherit;}
+	.slide-2-sec:first-child{margin-bottom:30px;}
+	.ul:last-child{margin-top:20px;}
+	.modal-dialog{width: inherit !important;max-width:754px;}
+	.btn-3{margin-top:20px;}
+	.modal-body .close{margin-right: -15px;}
+	.modal-row-1-col-1{padding-left: 4%;
+padding:2% 6% 22% 4%;}
+.col-row-10:last-child{margin-top:4%;}
+.col-row-10{float:inherit;width:auto;}
+.col-md-8.col-md-pull-4 .text-5 {
+    margin-top: 20px;
+}
+ }
+
+@media screen and (max-width:767px){
+	.sidebar{display:none;}
+	.dropdown a{background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b8d765443-5239-4630-8a41-6fa09d5cb81d%7d_plus_%281%29.png) no-repeat 96% center;}
+	.open > a{background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b43672a8a-00f0-41a9-901b-7b2af0e0cdef%7d_minus_%281%29.png) no-repeat 96% center;}
+	.dropdown-menu > li > a{background:inherit;}
+	.navbar-nav > li > a{background-color:#0d8bc5;color:#FFF;border-color:#1cb890;}
+	.navbar-nav > li > a:hover,.navbar-nav > li > a:focus{background-color:#1cb890;color:#FFF !important;border-color:#1cb890;}
+	.active{background-color:#1cb890 !important;color:#FFF !important;border-color:#1cb890 !important;}
+	.dropdown a:hover{border:inherit;}
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{background-color:#0d8bc5;border-color:#1cb890;color:#FFF;}
+	.dropdown-menu > li > a, .dropdown-menu > li > a:focus{background-color:#0d8bc5;border-color:#1cb890;color:#FFF;padding-top:10px !important;padding-bottom:10px !important;border-bottom:#1cb890;}
+	.dropdown-menu > li > a:hover{border-bottom:1px solid #1cb890 !important;}
+	.dropdown-menu > li:last-child > a{border-bottom:1px solid #1cb890 !important;}
+	.nav-color{display:none;}
+	.navbar-2{display:block !important;}
+	.nav-col-2{margin-left:inherit;}
+	.nav-col-2 > li > a:hover, .nav-col-2 > li > a:focus{border-bottom:inherit !important;}
+	.banner-text{width:auto;left:0;}
+	.row-4{
+overflow-x: scroll;}
+	.container-2{width: 800px;}
+	.row-6-col{width: 47%;}
+	.footer-col,.ul,.media{float:inherit;width:auto;text-align:left;}
+	.media{margin-top:30px;}
+	.modal-row-1-col-1{padding-left: 4%;
+padding:8% 6% 6% 4%;}
+	.modal-row-1-col-1,.modal-row-1-col-2{float:inherit;width:auto;}
+	.row-8-col-1{margin-bottom:30px;}
+	.caret{display:none;}
+	.row-10-col{float:inherit;width:auto;max-width:360px;margin:auto;}
+	}
+@media screen and (max-width:500px){
+.banner-slider > .banner-img:first-child{background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b77754c2c-b187-47ce-8889-caf6e6902fdf%7d_banner-IDC-mob-new.jpg) no-repeat scroll center center / cover;}
+.banner-slider > .banner-img:nth-child(2){background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b0f875164-e722-4838-a5ae-a389c1db1d78%7d_ODPi-mob1.jpg) no-repeat scroll center center / cover; }
+.banner-slider > .banner-img:nth-child(3){background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b1ee0ffd4-19d1-4591-a304-d4f0db72f711%7d_infosys-information-platform.jpg) no-repeat scroll center center / cover;}
+.banner-slider > .banner-img:nth-child(4){background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b4a2b81f6-294b-461d-b4f0-3c3d36f9a069%7d_iip-insights-mobile.jpg) no-repeat scroll center center / cover;cursor: pointer;}
+.banner-slider > .banner-img:nth-child(5){background:url(http://images.experienceinfosys.com/EloquaImages/clients/Infosys/%7b7f69aec1-ff29-4b01-a324-c2f12702849c%7d_modernized-account-receivable-reporting-system.jpg) no-repeat scroll center center / cover;}
+	}
+@media screen and (max-width:479px){
+	.banner-slider,.banner-slider > .banner-img{height:390px;}
+	.banner-text{bottom:20%;}
+	.banner-text > h1 {
+    line-height: 35px;
+    font-size: 25px;
+}
+.banner-text > h4{font-size: 14px;}
+.text-1{font-size:30px;line-height:40px;}
+.text-6{line-height: 28px;}
+.row-1-col-nn-2{font-size: 14px;}
+.row-2-col{font-size:14px;}
+.row-2-col span{font-size:14px !important;}
+.row-3-col{font-size:14px;}
+.row-3-col{margin-top: 60px;}
+.row-4-thumb{font-size:20px;}
+	/*.row-1-col,.row-4-col{float:inherit;width:auto;height:inherit;margin-top:30px;}*/
+	.row-1-col{float:inherit;width:auto;height:inherit;margin-top:30px;}
+	.row-4-col-3{margin-top:50px;}
+	.slide-2-sec:first-child{margin-bottom:inherit;}
+	.row-6-col{width:auto;display:block;margin-left:inherit;}
+	.footer-col-2{text-align:center;}
+	/*.col-row-9{float:inherit;width:auto;}
+	.col-row-9:first-child{padding-right:15px;}
+.col-row-9:last-child{padding-left:15px;margin-top:30px;}*/
+.col-row-10{float:inherit;width:auto;}
+.row-8-col-1 a{float:none;display:block;border-right: 1px solid #007CC3;border-bottom:inherit;}
+.row-8-col-1 a:last-child{border-bottom:1px solid #007CC3;}
+.row-10-col{max-width:inherit;}
+.row-9-nav span{display:block;}
+.row-9-nav a{width: inherit;}
+.row-9-nav a:first-child{padding-left:inherit;}
+	}
+	
+.userprofile li a{
+  color:#0c8cc4;font-weight:bold;
+}
+
+.bannerreport{
+  margin-top:50px;
+  margin-bottom:50px;
+
+}
+#reportslide
+{
+  margin-top:30px;
+}
+.reportcomp{
+  font-size:16px;
+  font-weight:bold;
+
+}
+#reportslide td:nth-child(4) {
+  color:rgb(124, 181, 236);
+  font-weight:bold;
+}
+
+#reportslide .btn-success,#reportslide .btn-danger{
+  padding: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.sideview ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sideview li{
+  display:inline-block;
+}
+.sideview li a{
+  padding: 10px 11px;
+  color: #fff;
+  padding: 5px 12px 8px 22px;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  text-decoration:none;
+}
+.sideview li:first-child a{
+  padding-left:0;
+  color: #fff;
+}
+.sideview li:last-child a{
+  color: #000;
+  padding-left:8px;
+}
+
+
+
+
+
+/* CSS Document */
